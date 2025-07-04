@@ -1,105 +1,70 @@
-# Food Management & Recipe Suggestion Platform
+# Getting Started with Create React App
 
-## Overview
-This project helps users manage food inventory, check expiry status, and discover recipes based on available (non-expired) items. It consists of a Flask backend and a React frontend.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Features
-- Classify food items as "Expired" or "Not Expired" based on purchase date and shelf life.
-- Suggest recipes for non-expired items using the Spoonacular API.
-- Show step-by-step recipe instructions and related YouTube videos.
-- Additional modules: Google Maps integration, Manure Conversion, and more.
+## Available Scripts
 
----
+In the project directory, you can run:
 
-## Project Structure
-```
-hack/
-  backend/      # Flask API
-    app.py
-    uploads/
-  frontend/     # React app
-    src/
-    public/
-    package.json
-```
+### `npm start`
 
----
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Backend Setup (Flask)
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### Prerequisites
-- Python 3.x
-- pip
+### `npm test`
 
-### Installation
-1. Navigate to the backend directory:
-   ```sh
-   cd backend
-   ```
-2. (Optional) Create a virtual environment:
-   ```sh
-   python -m venv venv
-   # On Windows:
-   .\venv\Scripts\activate
-   ```
-3. Install dependencies:
-   ```sh
-   pip install -r requirements.txt
-   ```
-4. Set your API keys in `app.py`:
-   - Replace `SPOONACULAR_API_KEY` and `YOUTUBE_API_KEY` with your own keys.
-5. Run the backend server:
-   ```sh
-   python app.py
-   ```
-   The backend will run at `http://127.0.0.1:5000`.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
----
+### `npm run build`
 
-## Frontend Setup (React)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Prerequisites
-- Node.js (v16+ recommended)
-- npm
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-### Installation
-1. Navigate to the frontend directory:
-   ```sh
-   cd frontend
-   ```
-2. Install dependencies:
-   ```sh
-   npm install
-   ```
-3. Start the React app:
-   ```sh
-   npm start
-   ```
-   The frontend will run at `http://localhost:3000`.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
----
+### `npm run eject`
 
-## Usage
-- Open your browser at `http://localhost:3000`.
-- Use the UI to classify food items, view recipes, and explore other features.
-- The frontend communicates with the backend at `http://127.0.0.1:5000`.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
----
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## API Keys
-- The backend requires valid API keys for Spoonacular and YouTube.
-- Obtain your keys and update the following variables in `backend/app.py`:
-  - `SPOONACULAR_API_KEY`
-  - `YOUTUBE_API_KEY`
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
----
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Backend API
-- `POST /classify` — Classifies food items and returns expiry status and recipe suggestions.
-  - Request JSON: `{ "food_items": ["milk 2024-06-01", "bread 2024-06-05"] }`
-  - Response JSON: `{ "classified_items": [...], "recipes": [...] }`
+## Learn More
 
----
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## License
-This project is for educational/demo purposes. Please secure your API keys and do not expose them in production. 
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
